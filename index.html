@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/727ed6276e.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./style.css">
     <title>Todo-List</title>
 </head>
 <body>
-  
-  
+
+    <header>
+        <h1>Todo-List</h1>
+    </header>
+    
+    <form>
+        <input type="text" name="" id="todo-input" class="todo-input">
+        <button class="todo-button" type="submit">
+            <i class="fa-solid fa-square-plus"></i>
+        </button>
+
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">Toutes</option>
+                <option value="completed">Complétée</option>
+                <option value="uncompleted">À faire</option>
+            </select>
+        </div>   
+    </form>
+
+    <div class="todo-container">
+        <ul class="todo-list"></ul>  
+    </div>
     
 <script src="./script.js"></script>
 </body>
